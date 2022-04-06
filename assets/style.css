@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lobster&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive, sans-serif;
+}
+
+
+
+header{
+    padding: 5px 100px 5px 200px;
+    /* padding-right: 200px; */
+    background-color: #28FFBF;
+    color: #ffffff;
+    overflow: auto;
+}
+
+.ket button:hover{
+    background-color: white;
+    color: gray;
+    border: 2px solid #28FFBF;
+    cursor: pointer;
+}
+
+.hide{
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    display: none;
+    background-color:transparent;
+    border: 0;
+    z-index: 1;
+    color: white;
+    font-size: 24px;
+}
+button > i {
+    pointer-events: none;
+} 
+
+.hide:hover{
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#logo{
+    width: 50%;
+    font-family: 'Lobster', cursive;
+    /* background-color: blue; */
+    float: left;
+}
+
+.lobster{
+    font-family: 'Lobster', cursive;
+
+}
+
+#logo h1{
+    margin: 0;
+    padding: 0.2em;
+}
+
+nav {
+    float: right;
+    width: 50%;
+    /* background-color: red; */
+}
+
+nav li{
+    display: inline;
+}
+
+.dropd a{
+    padding: 20px;
+    font-weight: bold;
+}
+
+.dropd a:hover{
+    background-color: #00af7b;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+    margin-right:100px ;
+}
+
+/* ========================================ARTICLES=============================================== */
+
+.top{
+    background-image: linear-gradient(white,#BCFFB9);
+    text-align: center;
+    padding-top: 100px;
+}
+
+article{
+    display: flex;
+    width: 100%;
+    overflow: auto;
+
+}
+
+
+.foto{
+    flex-grow: 1;
+    width: 40%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.keterangan{
+    flex-grow: 2;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    overflow: auto;
+}
+
+
+.box{
+    flex-grow: 1;
+    width: 60%;
+    padding: 50px;
+}
+.box p{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.box button{
+    text-decoration: none;
+    padding: 20px 50px 20px 50px;
+    border: 3px solid #28FFBF;
+    color: black;
+    font-family: 'Comfortaa', cursive, sans-serif;
+    background-color: Transparent;
+}
+
+.box button:hover{
+    background-color: #28FFBF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.title{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+.sampul{
+    height: 400px;
+    width: 400px;
+    background-image: url("image/jus-1.png");
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Article ditengah */
+
+.card, .card-2, .card-3{
+    width: 300px;
+    height: 500px;
+    margin: 30px;
+    box-shadow: 1px 3px 9px black;  
+    flex-grow: 1; 
+    display: inline;
+}
+
+.atas{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.bawah{
+    width: 55%;
+    padding: 20px;
+    text-align: center;
+    float: right;
+}
+
+#gambar1{
+    background-image: url("image/sample1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#gambar2{
+    background-image: url("image/sample2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#gambar3{
+    background-image: url("image/sample3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.minuman{
+    height: 100%;
+    margin-right: 20px;
+    box-shadow: 1px 3px 15px black;
+    flex-grow: 1;
+}
+
+.minuman-pic-1{
+    height: 70%;
+    background-color: gray;
+    background-image:url("image/orange.jpg") ;
+    background-size: cover;
+    background-position: top;
+}
+
+.minuman-pic-2{
+    height: 70%;
+    background-color: gray;
+    background-image:url("image/broccoli.jpg") ;
+    background-size: cover;
+    background-position: top;
+}
+
+.minuman-pic-3{
+    height: 70%;
+    background-color: gray;
+    background-image:url("image/lemonade.jpg") ;
+    background-size: cover;
+    background-position: top;
+}
+
+.ket{
+    padding: 10px;
+}
+.ket button{
+    text-decoration: none;
+    background-color: #28FFBF;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    margin-top: 20px;
+}
+
+.pilih{
+    text-align: center;
+}
+
+#pesan{
+    margin-right: 100px;
+}
+
+#ganti{
+    border-radius: 25%;
+}
+
+.pesan-card{
+    height: 400px;
+}
+
+.pemesanan{
+    margin-top: 100px;
+    width: 30%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 3px 9px rgba(24, 25, 48, 0.5);
+    border-radius: 15px;
+}
+
+/* ============================================ASIDE================================================ */
+
+aside{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.tentang-saya{
+    width: 30%;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 1px 3px 9px rgba(24, 25, 48, 0.5);
+}
+
+.foto-profil{
+    float: left;
+    border-radius: 15px 0 0 15px;
+    width: 40%;
+}
+
+
+.biodata{
+    float: right;
+    padding-left: 20px;
+    width: 50%;
+    text-align: left;
+
+}
+
+.pic{
+    height: 150px;
+    margin: 10px;
+    border-radius: 75px;
+}
+
+
+
+/* footer mulai dari sini */
+
+footer{
+    text-align: center;
+    color: gray;
+    background-color: #28FFBF;
+    padding: 10px;
+    height: 50px;
+    margin-top: 100px;
+    
+}
+
+
+/* Media Screen untuk tampilan responsive */
+@media screen and (max-width: 1200px) {
+    /* ===================================DROPDOWN============================================= */
+    
+    .hide{
+        display: block;
+    }
+
+
+
+    .dropd {
+        display: none;
+        position: absolute;
+        width: 100%;
+        background-color: #28FFBF;
+        z-index: 1;
+      }
+
+    .tampil{
+        display: block;
+    }
+
+    .dropd a{
+        padding: 10px;
+        font-weight: bold;
+    }
+      /* ======================================END OF DROPDOWN================================================ */
+   
+    .contact{
+        font-size: 16px;
+    }
+
+
+    .tengah{
+        height: 1000px;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .card, .card-2, .card-3{
+       /* background-color: yellow; */
+       width: 70%;
+        box-shadow: 1px 3px 9px black;  
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .atas{
+        /* background-color: red; */
+        height: 100%;
+        width: 40%;
+    }
+
+    .bawah{
+        width: 45%;
+        /* background-color: blue; */
+
+    }
+
+    nav, #logo {
+      clear: both;
+      width: 100%;
+      text-align: center;
+      padding: 0;
+    }
+
+    header{
+        padding:0 ;
+        width: 100%;
+    }
+
+    nav ul{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .sampul{
+        height: 400px;
+    }
+
+    .minuman{
+        height: 80%;
+        margin-right: 10px;
+    }
+    .ket{
+        font-size: 11px;
+        height: 50%;
+    }
+
+    .minuman-pic-1, .minuman-pic-2 ,.minuman-pic-3{
+        height: 50%;
+    }
+
+    .ket button{
+        text-decoration: none;
+        background-color: #28FFBF;
+        border: 0;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 15px 5px 15px;
+        margin-top: 20px;
+    }
+
+    .tentang-saya, .pemesanan{
+        width: 500px;
+    }
+
+  }
+
+  @media screen and (max-width: 900px) {
+    .tengah{
+        height: 1500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .sampul{
+        height: 200px;
+        width: 200px;
+    }
+    .card, .card-2, .card-3{
+        /* background-color: yellow; */
+        width: 90%;
+         box-shadow: 1px 3px 9px black;  
+         display: inline;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+    .bawah{
+        /* font-size: 12px; */
+        width: 40%;
+    }
+
+      .top{
+          display: block;
+          padding: 0;
+      }
+
+
+      .foto, .box{
+          width: 100%;
+          margin: 0;
+          padding: 0px;
+          /* background-color: blue; */
+      }
+
+      .box{
+          margin-bottom: 50px ;
+          display: block;
+      }
+      .box p{
+      font-size: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .box a{
+        margin-bottom: 40px;
+    }
+    
+    .tentang-saya{
+        width: 300px;
+        font-size: 9px;
+    }
+
+    .pemesanan{
+        width: 300px;
+        height: 250px;
+    }
+    
+    article {
+        display: block;
+    }
+
+    .keterangan{
+        height: 300px;
+    }
+
+}

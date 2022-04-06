@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Juicyta Website</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/051fec7fd0.js" crossorigin="anonymous"></script>
+</head>
+ 
+<body>
+
+    <header>
+        <div id="logo">
+            <h1> Juicyta!</h1>
+                <div class="buttonHide">
+                    <button onclick="munculDropdown()" class="hide" id="tombolDD">
+                            <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+       </div>
+        <!-- DROPDOWN MUNCUL BILA LAYAR < 1200 -->
+        <nav>
+            <div id="dropdown" class="dropd">
+                <ul>
+                    <li><a href="#top">Beranda</a></li>
+                    <li><a href="#pilih-rasa" >Order</a></li>
+                    <li><a href="#about">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="konten">
+            <article class="top" id="top">
+                <div class="foto">
+                    <div class="sampul"></div>
+                </div>
+
+                <div class="box">
+                    <h1>Haus? Beli jus aja!</h1>
+
+                    <p>
+                       Dapatkan minuman sehat terbaik dari website kami, 
+                    kami menjamin kualitas terbaik dengan bahan segar dan 100% organik tanpa menggunakan pengawet ataupun pewarna buatan.
+                    Tunggu apa lagi? Segarkan harimu dengan Juicyta! 
+                    </p>
+
+                    <button onclick="kebawah()">Pesan Sekarang!</button>
+
+                </div>
+            </article>
+
+            <article>
+                <h1  class="title">Kenapa harus beli disini?</h1>
+            </article>
+
+            <article class="tengah">
+
+                <div class="card">
+                    <div class="atas" id="gambar1"></div>
+                    <div class="bawah">
+                  
+                        <h1 class="lobster"> Organic </h1>
+                        <p>
+                            Produk kami terjamin 100% organik tanpa menggunakan bahan pengawet ataupun pewarna buatan!
+                            Produk kami memiliki kadar pestisida yang rendah, tidak kehilangan banyak nutrisi, meminimimalkan resiko resistensi antibiotik, dan membantu melawan penyakit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-2">
+                    <div class="atas" id="gambar2"></div>
+                    <div class="bawah">
+                        <h1 class="lobster"> Tasty! </h1>
+                        <p>
+                            Selain sehat, produk kami juga menjanjikan rasa terbaik dengan mengandalkan bahan segar dan berkualitas!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-3">
+                    <div class="atas" id="gambar3"></div>
+                    <div class="bawah">
+                        <h1 class="lobster"> Cheap! </h1>
+                        <p>
+                            Walau menggunakan bahan terbaik, produk kami tetap mempertahankan harga yang bersaing agar menjaga aksesibilitas produk ke lebih banyak orang!
+                        </p>
+                    </div>
+                </div>
+
+            </article>     
+
+            <article>
+                <h1  class="title">Pilih rasa kesukaanmu!</h1>
+            </article>
+
+            <article>
+                <div class="keterangan" id="pilih-rasa">
+   
+                            <div class="minuman">
+                                <div class="minuman-pic-1"></div>
+                                <div class="ket">
+                                      Jus Jeruk
+                                      <br>
+                                     Rp10.000,-
+                                     <br>
+                                    <button onclick='gantiGambar(this)' value="jeruk">Lihat</button>
+                                </div>
+                            </div>
+
+                            <div class="minuman">
+                                <div class="minuman-pic-2"></div>
+                                <div class="ket">
+                                     Jus Brokoli
+                                     <br>
+                                     Rp10.000,-
+                                     <br>
+                                    <button onclick="gantiGambar(this)" value="brokoli">Lihat</button>
+                                </div>
+                            </div>
+
+                            <div class="minuman">
+                                <div class="minuman-pic-3"></div>
+                                <div class="ket">
+                                     Lemonade
+                                     <br>
+                                     Rp10.000,-
+                                     <br>
+                                    <button onclick="gantiGambar(this)" value="lemon">Lihat</button>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="foto" id="foto-ubah">
+                    <div class="sampul" id="ganti"></div>
+                </div>
+
+            </article>
+
+            <article class="pesan-card">
+                <div class="pemesanan">
+                    <h1>Kirim permintaan pesanan mu ke:</h1>
+                    <h1 class="contact"> <i class="fa-brands fa-whatsapp"></i> 08131 3130 8722</h1>
+                    <h1 class="contact"> <i class="fa-solid fa-envelope"></i>arifbillah779@gmail.com</h1>
+                </div>
+            </article>
+
+            <aside>
+                <h1>Biodata</h1>
+                <div class="wrapper">
+                    <div class="tentang-saya" id="about">
+                        <div class="foto-profil">
+                           <img src="assets/image/me.png" class="pic">
+                        </div>
+                        <div class="biodata">
+                            <h1>Muhammad Arif Billah</h1>
+                            <p>
+                                TTL    :<br> Ambarai, 28 Januari 2001<br>
+                                Kontak :<br> 0831-3130-8722<br>
+                                Email  :<br> arifbillah779@gmail.com<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p> Created by Muhammad Arif Billah - 2022 - Cloud Computing Learning Path </p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
